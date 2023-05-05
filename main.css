@@ -67,6 +67,20 @@ p {
 .tarjeta img {
   max-width: 90%;
 }
+.img-espectacular{
+  max-width: 100%;
+}
+.img-apartaestudio{
+  max-width: 75%;
+}
+.img-proximamente{
+  max-width: 61%;
+}
+.parapente{
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(12, 1fr);
+}
 .tarjeta {
   grid-column-end: span 4;
   border-radius: 25px;
