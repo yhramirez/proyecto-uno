@@ -1,0 +1,112 @@
+:root {
+  --color-principal: #fadfdb;
+  --color-secundario: darkblue;
+  --sombra: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  color: var(--color-secundario);
+  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Raleway", sans-serif; */
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.intro img {
+  width: 90%;
+}
+.grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.intro .grid {
+  background-color: var(--color-principal);
+  padding: 2em;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.titulo {
+  grid-column-end: span 6;
+  text-align: center;
+}
+
+.img-inicial {
+  grid-column-end: span 6;
+  border-radius: 15px;
+}
+
+.tarjetas {
+  text-align: center;
+}
+
+.tarjeta img {
+  max-width: 90%;
+}
+.tarjeta {
+  grid-column-end: span 4;
+  border-radius: 25px;
+  padding: 10px;
+  text-align: center;
+}
+.siguiente {
+  text-align: center;
+}
+.siguiente .ver-mas {
+  grid-column-end: span 8;
+  grid-column-start: 3;
+  max-width: 100%;
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+#navbarsExample01 {
+  display: block;
+}
+
+@media (max-width: 48rem) {
+  .grid > * {
+    grid-column-end: span 12;
+  }
+  h1 {
+    font-size: 12px;
+  }
+
+  .ver-mas {
+    grid-column-start: 1;
+  }
+
+  .container-fluid {
+    display: block;
+  }
+
+  #navbarsExample01 {
+    display: none;
+  }
+}
